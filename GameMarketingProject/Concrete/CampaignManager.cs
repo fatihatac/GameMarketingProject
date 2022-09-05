@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace GameMarketingProject.Concrete
 {
-    public class CampaignManager : IManagerRepository<Campaign>
+    public class CampaignManager : ICampaignService
     {
         public void Add(Campaign entity)
         {
-            Console.WriteLine("Kampyanya eklendi : " +entity.CampaignName);
+            Console.WriteLine("Kampyanya eklendi : " + entity.CampaignName);
         }
 
         public void Delete(Campaign entity)

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace GameMarketingProject.Concrete
 {
-    public class ProductManager : IManagerRepository<Product>
+    public class ProductManager : IProductService
     {
         public void Add(Product entity)
         {
